@@ -28,16 +28,10 @@ end
 
 function plotX(i,j,x1,x2,T,e,t)
     figure(i)
-        subplot(2,4,j), plot(t,x1,'r')
+        subplot(2,2,j), plot(t,x1,'r')
             title(['T = ', num2str(T(i)), ' s y ', '$\varepsilon$ = ', num2str(e(j))],'Interpreter','latex')
             legend('x_{1}(t)', 'Location', 'northeast')
             xlabel('t')
             ylabel('x_{1}(t)')
-            hold on, grid on
-        subplot(2,4,j+4), plot(t,x2,'b')
-            title(['T = ', num2str(T(i)), ' s y ', '$\varepsilon$ = ', num2str(e(j))],'Interpreter','latex')
-            legend('x_{2}(t)', 'Location', 'northeast')
-            xlabel('t')
-            ylabel('x_{2}(t)')
             hold on, grid on
 end

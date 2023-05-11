@@ -1,5 +1,4 @@
 function [x1, x2] = function_P1(x1i, x2i, T, e, tf)
-%FUNCTION_P1 Funcion que hace algo
     
     % Discretizacion
     t = 0:T:tf-T;
